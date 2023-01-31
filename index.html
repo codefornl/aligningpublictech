@@ -1,7 +1,45 @@
+---
+title: Aligning Public Tech Unconference
+description: "Code for NL organiseert Aligning Public Tech 2023 'Elkaar Versterken'"
+domain: https://www.aligningpublictech.nl/
+image: elkaar-versterken-zonder.png
+---
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Aligning Public Tech</title>
+        <meta name="viewport" content="width=320,initial-scale=1,user-scalable=0" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Code for NL (c) 2023" />
+
+        <link rel="image_src" href="{{ page.domain }}{{ page.image }}" />
+        <link rel="shortcut icon" type="image/png" href="{{ page.url }}favicon.png" />
+
+        <title>{{ page.title }}</title>
+        <meta name="title" content="{{ page.title }}" />
+        <meta name="description" content="{{ page.description }}" />
+        <meta name="keywords" content="" />
+
+        <meta property="og:url" content="{{ page.domain }}" />
+        <meta property="og:title" name="title" content="{{ page.title }}" />
+
+        <meta
+            property="og:description"
+            name="description"
+            content="{{ page.description }}"
+        />
+        <meta property="og:image" content="{{ page.domain }}{{ page.image }}" />
+        <link rel="image_src" href="{{ page.domain }}{{ page.image }}" />
+        <meta name="keywords" content="" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:username"
+            content="@codefornl"
+        />
+        <meta name="twitter:title" content="{{ page.title }}" />
+        <meta name="twitter:description" content="{{ page.description }}" />
+        <meta name="twitter:image:src" content="{{ page.domain }}{{ page.image }}" />
+
         <style>
             html, body {
                 background: #3F8B6A url(elkaar-versterken-zonder.png) center center no-repeat;
