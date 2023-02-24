@@ -41,17 +41,74 @@ image: elkaar-versterken-zonder.png
         <meta name="twitter:image:src" content="{{ page.domain }}{{ page.image }}" />
 
         <style>
+            @font-face {
+                font-family: "Roboto";
+                src: url("/Roboto-Regular.ttf");
+            }
+            @font-face {
+                font-family: "Anton";
+                src: url("/Anton-Regular.ttf");
+            }
+            .Anton {
+                font-family: "Anton", Arial, Helvetica, sans-serif;
+                color: #EB8C3A;
+                background: white;
+                padding: 0 10px;
+                display: inline-block;
+            }
+            .Roboto {
+                font-family: "Roboto", Arial, Helvetica, sans-serif;
+            }
             html, body {
-                background: #3F8B6A url(elkaar-versterken-zonder.png) center center no-repeat;
-                background-size: contain;
-                height: 100%;
                 padding: 0;
-                margin: 0;
-                font-family: Arial;
-                color: #fff;
+                margin: 20px;
+                font-family: "Roboto", Arial, Helvetica, sans-serif;
+                text-align: center;
+                background: #3F8B6A;
+                color: white;
+                font-weight: 100;
+            }
+            img {
+                max-width: 100%;
+                box-shadow: 0 0 5px #1f4534;
+            }
+            .wrapper {
+                display: flex;
+                max-width: 800px;
+                margin: 0 auto 100px;
+            }
+            .poster-box {
+                flex: 1;
+            }
+            .text-box {
+                flex: 1;
+                margin: 1vw 40px;
+            }
+            @media screen and (max-width: 640px)  {
+                .wrapper {
+                    width: 100%;
+                    display: block;
+                }
+                .text-box {
+                    margin: 40px;
+                }
             }
         </style>
     </head>
     <body>
+        <div class="wrapper">
+            <div class="poster-box">
+                <img src="aligningpublictech.png" alt="Aligning Public Tech promotieposter door Code for NL">
+            </div>
+            <div class="text-box">
+                <h2><span class="Anton">Code for NL</span> presenteert</h2>
+                <p>Aligning Public Tech Unconference:</p>
+                <h1 class="Anton">ELKAAR VERSTERKEN</h1>
+                <p>Donderdag 30 maart 2023</p>
+                <p>13:00 tot 17:00 uur, aansluitend borrel</p>
+                <p>Provinciehuis in Den Haag (Ruimte "Marnixpassage")</p>
+                <h2><a href="https://www.meetup.com/" class="Anton">Aanmelden op Meetup</a></h2>
+            </div>
+        </div>
     </body>
 </html>
